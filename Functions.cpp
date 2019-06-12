@@ -1,7 +1,7 @@
 /*Funtions*/
 #include<stdio.h>
 
-void max(int x, int y);
+int max(int x, int y);
 
 void temp(int z){
 	z = 20;
@@ -33,5 +33,6 @@ void max(int x,int y){
 	}else{
 		printf("\n %d is greater",y);
 	}
+	
 }
 
