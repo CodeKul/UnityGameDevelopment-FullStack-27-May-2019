@@ -24,9 +24,12 @@ class Box{
 		}
 		
 		void setHeight(int);
+		friend void getParam(Box);
 		
 };
-
+void getParam(Box box){
+	cout<<"Length : "<<box.length<<"\tBreadth : "<<box.breadth<<"\tHeight :"<<box.height<<endl;
+}
 class SmallBox:Box{
 	public:
 		int getArea(){
@@ -56,17 +59,18 @@ int main(){
 	
 	
 	
-	sb1.setLength(10);
-	sb1.setBreadth(10);
-	sb1.setHeight(10);
-
+	b1.setLength(10);
+	b1.setBreadth(10);
+	b1.setHeight(10);
+//
 //	b2.length = 7;
 //	b2.breadth = 8;
 //	b2.height = 9;
 	
 //	cout<<"box1 properties are : "<<b1.length<<"\t"<<b1.breadth<<"\t"<<b1.height<<endl;
 	
-	cout<<"Volume is :"<<sb1.getArea()<<endl;
+//	cout<<"Volume is :"<<sb1.getArea()<<endl;
 	
-	cout<<"Volume is :"<<b2.getVolume();
+//	cout<<"Volume is :"<<b2.getVolume();
+	getParam(b1);
 }
