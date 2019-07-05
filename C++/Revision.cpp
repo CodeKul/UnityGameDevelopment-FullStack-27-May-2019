@@ -62,6 +62,5 @@ int main(){
 	a.getParam();
 	b.getParam();
 //	b1.setParam(10,20,30);
-
 }
 
