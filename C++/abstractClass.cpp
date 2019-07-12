@@ -1,16 +1,17 @@
-/*Polymorphism*/
+/*Abstract Class*/
 
 #include<iostream>
 using namespace std;
 
 class Shape{
-	public:
+	protected:
 		int width,height;
+	public:
 		Shape(int w = 0, int h = 0){
 			width = w;
 			height = h;
 		}
-		
+
 		virtual int area() = 0;
 };
 
@@ -38,17 +39,5 @@ class Triangle:public Shape{
 };
 
 int main(){
-	Shape *shape;
-	Rectangle rect(10,15);
-	Triangle tri(20,10);
-	
-	//shape = &rect;
-//	shape->area();
-	
-	shape = &tri;
-	shape->area();
+	Rectangle rect(10,20);
 }
-
-
-
-
