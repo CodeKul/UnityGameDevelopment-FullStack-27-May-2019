@@ -34,15 +34,15 @@ class Book{
 //		}	
 };
 
-//bool compareFunction(string s1, string s2){
-//	int x = s1.compare(s2); 
-//	
-//	if(x == 0){
-//		return true;
-//	}else{
-//		return false;
-//	}
-//}
+bool compareFunction(string s1, string s2){
+	int x = s1.compare(s2); 
+	
+	if(x == 0){
+		return true;
+	}else{
+		return false;
+	}
+}
 
 int main(){
 	int i,n;
